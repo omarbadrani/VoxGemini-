@@ -1,0 +1,7 @@
+{
+  "name": "VoxGemini AI",
+  "description": "An advanced AI-powered application featuring human-like text-to-speech, real-time transcription, and sophisticated chatbot interactions using Gemini's latest models.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

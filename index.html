@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoxGemini - Human-Like AI Voice</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0f1115;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --text-main: #ffffff;
+      --text-muted: #71717a;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+
+    body.theme-midnight {
+      --bg-color: #0f1115;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --text-main: #ffffff;
+    }
+
+    body.theme-dawn {
+      --bg-color: #f8fafc;
+      --card-bg: rgba(0, 0, 0, 0.03);
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border: rgba(0, 0, 0, 0.08);
+    }
+
+    body.theme-abyss {
+      --bg-color: #04101d;
+      --card-bg: rgba(6, 182, 212, 0.05);
+      --primary: #06b6d4;
+      --primary-hover: #0891b2;
+      --text-main: #e2f8ff;
+    }
+
+    body.theme-forest {
+      --bg-color: #06110a;
+      --card-bg: rgba(34, 197, 94, 0.05);
+      --primary: #22c55e;
+      --primary-hover: #16a34a;
+      --text-main: #f0fdf4;
+    }
+
+    body.theme-crimson {
+      --bg-color: #110611;
+      --card-bg: rgba(225, 29, 72, 0.05);
+      --primary: #e11d48;
+      --primary-hover: #be123c;
+      --text-main: #fff1f2;
+    }
+
+    body { 
+      font-family: 'Inter', sans-serif; 
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    .glass {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+    }
+
+    .bg-main { background-color: var(--bg-color); }
+    .text-primary { color: var(--primary); }
+    .bg-primary { background-color: var(--primary); }
+    .border-main { border-color: var(--border); }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: rgba(0,0,0,0.05);
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: var(--primary);
+      opacity: 0.3;
+      border-radius: 10px;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="theme-midnight text-white min-h-screen">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
